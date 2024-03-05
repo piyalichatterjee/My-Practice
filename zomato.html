@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zomato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("./images/food\ image.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }  */
+
+        .container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("./images/food\ image.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vh;
+            /* width: 100%; */
+            object-fit: cover;
+            /* border: 2px solid rgb(17, 172, 33); */
+        }
+
+
+        #menu {
+            /* border: 2px solid yellow; */
+            height: 10vh;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+
+            color: aliceblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hand {
+            /* border: 3px solid palevioletred; */
+            display: flex;
+            justify-content: space-between;
+            /* width: 10%; */
+        }
+
+        .navbar {
+            /* border: 2px solid red; */
+            /* width: 60%; */
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        li {
+            /* border: 2px solid red; */
+            /* padding: 5px 20px; */
+            margin: 20px;
+            cursor: pointer;
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        .food {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            /* border: 2px solid white; */
+            margin: 40px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            /* padding: 20px; */
+        }
+
+        h3 {
+            font-size: 2rem;
+            padding: 10px;
+
+        }
+
+        .test {
+            /* border: 2px solid red; */
+        }
+
+        .best {
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            border-radius: 10px;
+            margin: auto;
+            width: 90%;
+            height: 5vh;
+            /* overflow: hidden; */
+            max-width: 800px;
+            background-color: white;
+            /* border: none; */
+        }
+        i{
+            padding: 5px 10px;
+        }
+
+        input {
+            width: 60%;
+            font-size: 1rem;
+            /* height: 6vh; */
+            outline: none;
+            padding: .8rem 0;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav id="menu">
+                <div class="hand">
+                    <i class="fa-regular fa-hand-point-right"></i>
+                    <h5>Get the App</h5>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li>Investor Relation</li>
+                        <li> Add restaurant</li>
+                        <li> Log in</li>
+                        <li>Sign up</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="bar">
+                <div class="food">
+                    <h1>zomato</h1>
+                    <h3>Discover the best food & drinks in Kolkata</h3>
+                </div>
+                <div class="test">
+                    <div class="best">
+                        <i style="color: red;" class="fa-solid fa-location-dot"></i>
+                        <input type="text" id="location" placeholder="Kolkata">
+                        <i style="color: gray;" class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="glass" placeholder="Search for restaurant,cuisine or a dish">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

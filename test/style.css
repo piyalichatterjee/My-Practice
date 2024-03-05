@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation Bar */
+header {
+    height: 800px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/darjeeling.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+nav {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.149);
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 0.9rem 1.9rem;
+}
+
+#logo img {
+    height: 60px;
+    margin: .2rem .4rem;
+}
+
+/* Navigation Bar: List styling */
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+nav ul li a {
+    color: white;
+    padding: .2rem 1.6rem;
+    /* padding: 3rem; */
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: .2rem;
+    height: 85%;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    /* outline: 2px solid black; */
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Services Section */
+#services {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+#services .box {
+    border: 2px solid red;
+    margin: 0.8rem;
+    border-radius: 5px;
+    background-color: rgba(239, 185, 185, 0.775);
+    width: 80%;
+    max-width: 450px;
+}
+
+#services .box img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#services .box p {
+    margin: 0.2rem;
+
+}
+
+/* Client-Section */
+#client-section {
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/rajasthan.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+
+/* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/darjeeling.jpg"); */
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: 1px solid red;
+}
+
+.client-item {
+    padding: 2rem;
+    width: 5%;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+#clients img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Contact Section */
+#contact {
+    background-color: rgb(169, 134, 202);
+    height: 100%;
+    width: 100%;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.3rem;
+}
+
+#contact-box form {
+    width: 70%;
+    max-width: 700px;
+
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+
+
+}
+
+#contact-box input,
+textarea {
+    width: 100%;
+    color: black;
+    padding: 0.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 0.8rem 1.3rem;
+
+}
+
+
+/* utility Classes */
+.h-primary {
+    font-size: 3.5rem;
+    padding: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.h-secondary {
+    font-size: 2.0rem;
+    padding: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.btn {
+    padding: 0.2rem 1.2rem;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}

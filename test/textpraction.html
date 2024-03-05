@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.2)), url("../images/darjeeling.jpg");
+        /* width: 100%; */
+        height: 60vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* object-fit: cover; */
+    }
+
+    .navbar {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        /* border: 2px solid red; */
+
+    }
+
+    .navbar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 10px 20px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        /* align-items: center; */
+        /* margin: 10px 15px; */
+    }
+
+    .navbar li {
+        padding: 0.8rem;
+        font-size: 1.2rem;
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+    .navbar li:hover {
+        background-color: aliceblue;
+        color: black;
+    }
+
+    .text {
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        border: 2px solid blue;
+        width: 50%;
+        margin: auto;
+        height: 50vh;
+
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        color: aliceblue;
+    }
+
+    h1 {
+        margin: 0.8rem;
+    }
+
+    button {
+        background-color: brown;
+        color: aliceblue;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 0.3rem 1rem;
+        cursor: pointer;
+        margin: 1rem;
+    }
+
+    h2 {
+        text-align: center;
+        /* width: 50%; */
+        /* padding: 1rem; */
+        margin: 20px;
+        font-size: 2rem;
+        /* border: 2px solid yellow; */
+    }
+
+    #services {
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* border: 2px solid red; */
+        /* margin: 1rem; */
+        /* width: 100%; */
+        /* height: 50vh; */
+    }
+
+    .card {
+     /* width: 30%;  */
+     max-width: 250px;
+        border: 2px solid rgb(168, 12, 17);
+        color: black;
+        margin:  auto;
+        /* padding: 1rem; */
+        background-color: rgb(203, 235, 252);
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #services h3 {
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+    #services p {
+        padding: 1rem;
+    }
+
+    #services img {
+        /* width: 100%; */
+        object-fit: cover;
+    }
+
+    .clients {
+        /* border: 2px solid black; */
+        min-height: 30vh;
+        background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.3)), url("../images/images1.jpg");
+        background-position: center;
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+        /* object-fit: cover; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .clients h4 {
+        font-size: 2rem;
+        /* margin: 1.5rem; */
+        /* padding: 2rem; */
+    }
+
+    .icon {
+        font-size: 3rem;
+        width: 50%;
+        /* border: 2px solid green; */
+        /* padding:  1.5rem; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #contact {
+        /* border: 2px solid black; */
+        height: 50vh;
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* min-height: 50vh; */
+        /* width: 100%; */
+        background-color: rgb(124, 126, 127);
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid blue; */
+        width: 80%;
+        max-width: 800px;
+        height: 50vh;
+        /* margin: auto; */
+    }
+
+    #contact form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+
+    }
+
+    #contact label {
+        margin: 10px 0;
+    }
+
+    #contact input {
+        outline: none;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    #contact textarea {
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        padding: 5px;
+    }
+
+    #contact button {
+        width: 60%;
+        padding: 5px 10px;
+        border: 2px solid white;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="../images/images2.jpg" alt="">
+                </div>
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+            <div class="text">
+                <div class="box">
+                    <h1>Welcome to my Website</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit repellat et in nihil quis! Ullam
+                        voluptatum commodi rerum illum corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <h2>Our Services</h2>
+    <div id="services">
+        <div class="card">
+            <img src="../images/pizza.jpg" alt="error">
+            <h3>Food Ordering</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, tempore. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Praesentium quisquam cum unde distinctio ipsum repudiandae nisi nulla,
+                quasi dolorem quae a ratione reprehenderit odit nam labore possimus.</p>
+        </div>
+        <div class="card">
+            <img src="../images/pizza.jpg" alt="error">
+            <h3>Catering</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, tempore. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Praesentium quisquam cum unde distinctio ipsum repudiandae nisi nulla,
+                quasi dolorem quae a ratione reprehenderit odit nam labore possimus.</p>
+        </div>
+        <div class="card">
+            <img src="../images/pizza.jpg" alt="error">
+            <h3>Bulk Ordering</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, tempore. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Praesentium quisquam cum unde distinctio ipsum repudiandae nisi nulla,
+                quasi dolorem quae a ratione reprehenderit odit nam labore possimus.</p>
+        </div>
+    </div>
+    <div class="clients">
+        <h4>Our Clients</h4>
+        <div class="icon">
+            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-microsoft"></i>
+            <i class="fa-brands fa-skype"></i>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="list">
+            <h1>Contact Us</h1>
+            <form action="" method="get">
+                <label for="name">Name : </label>
+                <input type="text" id="name" placeholder="Enter Name">
+                <label for="email">Email : </label>
+                <input type="email" id="email" placeholder="Enter Email">
+                <label for="phonenumber">Phone Number : </label>
+                <input type="number" id="phonenumber" placeholder="Enter Phone Number">
+                <label for="message">Message: </label>
+                <textarea name="Message" id="message" cols="10" rows="4" placeholder="Enter Message"></textarea>
+            </form>
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+
+</html>

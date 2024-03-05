@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <i class="fa-solid fa-house"></i>
+
+
+</body>
+<script>
+    "use strict"
+    // value = 10
+    // 0,1,1,2,3,5,8,13,21
+    // let var1 = 10 // Variable declaration and variable allocation
+    // const var2 = 20
+    // var var3 = 30
+    // var1 = 11 // Reassignment / Reallocation
+    // var var3 = 31 // Variable redeclaration
+    // Data type
+    // var1 = 11 // Int / Integer
+    // var1 = 3.56 // Float / Floating number
+    // var1 = "a" // Char / Character
+    // var1 = "piyali" // String
+    // var1 = true // Bool / Boolean
+    // Operator
+    // Arithmatic + , - , * , / , %
+    // console.log(var2+var3)
+    // Comparison == , === , < , > , <= , >= , != , !==
+    // Logical && , || , !
+
+    // let age = 18
+    // if (age > 18) {
+    //     console.log("Your age is " + age + " and you can give driving test")
+    // }
+    // else if (age === 18) {
+    //     console.log(`Your age is ${age} and you can give driving test next year`)
+    // }
+    // else {
+    //     console.log("Your age is " + age + " and you are under 18 now")
+    // }
+    // let num = 75
+    // if (num > 100) {
+    //     console.log(`Invalid number`)
+    // }
+    // else if (num >= 90) {
+    //     console.log(`Your num is ${num} and your grade is A`)
+    // }
+    // else if (num >= 70) {
+    //     console.log(`Your num is ${num} and your grade is B`)
+    // }
+    // else if (num >= 50) {
+    //     console.log(`Your num is ${num} and your grade is C`)
+    // }
+    // else {
+    //     console.log("You are fail")
+    // }
+    // let year = 2000
+    // if(year%4==0){
+    //     console.log("It is leap year")
+    // }
+    // else{
+    //     console.log("It is not a leap year")
+    //     }
+    // let num =5
+    // if (num%2==0){
+    //     console.log(`${num} is not prime number`)
+    // }
+    // else{
+    //     console.log(`${num} is prime number`)
+    // }
+    // Array
+    // let studentMarks = [80,70,60]
+    // let year = [2000,2001,2002,2003,2004,2005,2006,2007,2008]
+    // let studentName = ["Studenta","Studentb","Studentc"]
+    // let test = [50,5.4,"A","String",true,"test","hello"]
+    // let string = "Abhra"
+    // let arr = ["A","b","h","r","a"]
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log(arr[i])
+
+    // }
+    // console.log(string[2])
+    // console.log(arr[2])
+    // studentMarks[0] = 90
+    // console.log(studentMarks[0])
+    // console.log(studentName[0])
+    // console.log(test)
+    // console.log(test.length)
+    // for (let a = 0; a < year.length; a++) {
+    //     if(year[a]%4===0) {
+    //         console.log(year[a]+" is leap year")
+    //     }
+
+    // }
+    // year.pop() // Delete last value of array
+    // console.log(year)
+    // year.push(2009)
+    // console.log(year)
+    // delete year[year.length-1]
+    // console.log(year)
+    // console.log(year.length)
+    // year[year.length] = 2009
+    // console.log(year)
+    // let year1 =[2012,2013,2014,2015,2016,2017]
+    // // console.log(year.shift())
+    // // console.log(year.unshift(2011))
+    // // console.log(year)
+    // console.log(year1.concat(2018))
+    // let year2
+    // // year2 = year1.slice(5)
+    // // console.log(year1)
+    // // console.log(year2)
+    // year2 = year1.splice(0,2,"Add1","Add2")
+    // console.log(year1)
+    // Class is general 
+    // Object
+    // let student = [
+    //     {
+    //         name: "Abhradip Paul",
+    //         age: 21,
+    //         rollno: 34,
+    //         section: "A",
+    //         class: "Seven",
+    //         grade : ["A","B+","C","A"]
+    //     },
+    //     {
+    //         name : "Piyali Chatterjee",
+    //         age : 22,
+    //         rollno : 23,
+    //         section : "A",
+    //         class : "Seven"
+    //     }
+    // ]
+    // let name1 = "asbag"
+    // let name2 = "asbag"
+    // // JSON
+    // let tv = {
+    //     "type": "lcd",
+    //     "size": 24,
+    //     "company": "samsung",
+    //     "model": "we234",
+    //     "price": 20
+    // }
+    // console.log(student[1])
+    // console.log(student.name)
+    // console.log(student.age)
+    // console.log(student.rollno)
+    // console.log(student.section)
+    // console.log(student.class)
+    // for(let i =0 ;i < student.length;i++){
+    // console.log(student[i])
+    // }
+    // let num = [1,3,7,9,7,46,4]
+    // let result = 0
+    // // console.log(num[0],num[1])
+    // for(let i = 0;i<num.length;i++){
+    // if(result < num[i]){
+    // result = num[i]
+    // }
+    // }
+    // console.log(result)
+    // let num = [4, 8, 9, 50, 76, 40, 80, 73]
+    // num.push(45)
+    // console.log(num)
+    // num.unshift(74)
+    // console.log(num)
+    // let num1=[47,56,12,3,4]
+    // let num2=[41,25,37,49,15]
+    // console.log(num.concat(num1,num2))
+    // let counts =[74,84,94,68,49,54]
+    // let section =counts.slice(2)
+    // console.log(counts)
+    // console.log(section)        
+    // let potatochips = {
+    //     companyname: "Lays",
+    //     flavors: "Spicy",
+    //     price: 20,
+    // }
+    // console.log(potatochips)
+    // console.log(potatochips.price)
+    // let student = [
+    //     {
+    //         name: "Piyali Chatterjee",
+    //         class: "Five",
+    //         section: "A",
+    //         rollno: 20,
+    //     },
+    //     {
+    //         name: "Puja Saha",
+    //         class: "Five",
+    //         section: "A",
+    //         rollno: 22,
+    //     },
+    //     {
+    //         name: "Sneha Roy",
+    //         class: "Five",
+    //         section: "A",
+    //         rollno: 26,
+    //     }
+    // ]
+    // console.log(student[0].name)
+    // for (let i = 0; i < student.length; i++) {
+    //     console.log(student[i].name)
+    // }
+
+    // for (let a = 100; a >= 10; a = a-10) {
+    //     console.log(a)
+    // }
+    // 10 20 30 40 
+    // a+=10 , a = a+10
+    // function test(a, b) {
+    //     return b - a
+    // }
+    // console.log(num)
+    // console.log(num.sort(test))
+
+
+
+
+
+
+
+</script>
+
+</html>

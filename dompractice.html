@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn{
+        background-color: blue;
+        color: aliceblue;
+
+    }
+</style>
+<body>
+
+    <div id="box">
+        <p>Lorem ipsum dolor sit.</p>
+        <h1>handing</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <div class="box1">
+        <h1>piyali</h1>
+    </div>
+    <!-- <button class="btn" id="box" onclick="buttonClick()" onmousemove="buttonOver()">Contact Us</button> -->
+    <!-- <button class="btn" id="box">Contact Us</button> -->
+    <script>
+
+// let box=document.getElementById("box")
+// let box=document.getElementsByClassName("box")
+// let box=document.getElementsByTagName("div")
+// let box=document.querySelectorAll(".box")
+// let box=document.querySelector(".box")
+// let box=document.querySelector("#box")
+// let box=document.querySelectorAll("p")[1]
+// let result=box.previousElementSibling
+
+let box=document.querySelectorAll("#box")[0]
+console.log(box)
+let h1Element=document.createElement("h1")
+let h1Text=document.createTextNode("This is home page")
+
+
+
+h1Element.append(h1Text)
+box.append(h1Element)
+
+
+
+
+
+
+
+// const box = document.querySelector("#box")
+// console.log(box.attributes.class)
+
+// function buttonClick(){
+//     alert("button was cilcked")
+// }
+
+// let buttonClick=()=> {
+//     alert("button was clicked")
+// }
+// function buttonOver(){
+    // alert("button was over")
+// }
+
+
+// let box=document.getElementById("box")
+
+// box.addEventListener("click",function(){
+//     // alert("button was cilcked")
+// console.log("button was cilcked ")
+// })
+// box.addEventListener("mouseover",function(){
+//     // alert("mouseover is activate")
+//     console.log("mouseover is acctivate")
+// })
+// box.addEventListener("mouseout",function(){
+//     // alert("mouseout is activate")
+//     console.log("mouseout is activate")
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function buttonClick(){
+    // alert("button was click")
+// }
+
+
+
+
+// let box=document.getElementById("box")
+// console.log(box)
+
+// box.addEventListener("click",buttonClick)
+// box.addEventListener("click",function(){
+            // alert("button was click")
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// get Computed css //
+        // let className=document.querySelector(".btn")
+        // let cssColor=getComputedStyle(className)
+        // // console.log(cssColor.backgroundColor)
+        // console.log(cssColor.color)
+
+    //   change inline style //
+    
+// let className=document.querySelector(".btn")
+
+// className.style.cssText="background-color:blue; color:white;"  //1//
+// className.setAttribute("style","background-color:blue; color:white;")  //2//
+
+// className.style.cssText="background-color:red;"        //3//
+// className.style.cssText="background-color:red; border:2px solid green;"//
+   //4//
+// className.style.cssText +="background-color:red; border:2px solid green;" 
+//5//
+
+
+
+
+        // let body = document.getElementsByTagName("body")[0]
+        // console.log(body)
+        // let box = document.getElementById("box")
+        // // console.log(box)
+        // let divElement = document.createElement("div")
+        // let h1Element = document.createElement("h1")
+        // let pElement = document.createElement("p")
+        // let h1Text=document.createTextNode("This a h1 tag")
+        // let pText=document.createTextNode("This a p tag")
+
+        // h1Element.appendChild(h1Text)
+        // pElement.appendChild(pText)
+        // divElement.appendChild(h1Element)
+        // divElement.appendChild(pElement)
+        // body.appendChild(divElement)
+
+        // //   insert Before //
+        // let position=box.firstElementChild
+        // box.insertBefore(h1Element,position)  
+                                       
+// remove child element //
+
+// let box=document.getElementById("box")
+
+// let h1Remove=box.firstElementChild.nextElementSibling
+
+// box.removeChild(h1Remove)
+// console.log(h1Remove)
+        
+// clone or copy //
+
+// let box=document.getElementById("box")
+// let cloneElement=box.cloneNode(true)
+// let body = document.getElementsByTagName("body")[0]
+// console.log(body)
+// cloneElement.id="text"
+// body.appendChild(cloneElement)
+// console.log(cloneElement)
+
+//   Replace Element  //
+
+// let box=document.getElementById("box")
+// let h1Element=document.createElement("h1")
+// let h1Text=document.createTextNode("home page")
+// h1Element.appendChild(h1Text)
+
+// let h1Replece=box.firstElementChild.nextElementSibling
+// box.replaceChild(h1Element,h1Replece)
+
+// Insert Adjacent HTML//
+// let box=document.getElementById("box")
+
+// let h1Text="<h1>Home Page</h1>"
+
+// box.insertAdjacentHTML("afterbegin",h1Text)
+// box.insertAdjacentHTML("beforebegin",h1Text)
+// box.insertAdjacentHTML("afterend",h1Text)
+// box.insertAdjacentHTML("beforeend",h1Text)
+
+// Change attribute //
+
+// let className=document.querySelector(".btn")
+
+// // className.setAttribute("id","box")
+
+// // let value=className.getAttribute("id")
+// // let value=className.removeAttribute("class")
+// let value=className.hasAttribute("clas")
+// console.log(value)
+
+
+    </script>
+</body>
+
+</html>

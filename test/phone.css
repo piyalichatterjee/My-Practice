@@ -1,0 +1,22 @@
+/* Navigation */
+@media only screen and (max-width : 1200px) {
+    
+    nav{
+        flex-direction: column;
+    }
+    /* Home Section */
+    #home{
+    height: 280px;
+    
+    }
+    #services{
+    flex-direction: column;
+    }
+    #services .box{
+    
+    }
+}
+/* Services section */
+/* Clients section */
+/* Contact us section */
+/* Footer */

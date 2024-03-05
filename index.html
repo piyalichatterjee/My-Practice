@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 80vh;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: brown;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            transition: transform 0.5s ease-in-out;
+        } 
+        .box:hover{
+            transform: rotate(45deg); */
+    /* transform: skew(40deg); */
+    /* transform: scale(0.5); */
+    /* transform: translateX(123px); */
+    /* transform: translateY(-123px); */
+    /* transform: translate(123px,-123px); */
+
+    /* } */
+
+    /* .box{
+            background-color: red;
+            color: rgba(242, 235, 235, 0.936);
+            font-size: 2rem;
+            text-align: center;
+            display: none;
+        }
+    @media only screen and (max-width:500px){
+        #box1{
+            display: block;
+            background-color: blue;
+        }
+    }
+        
+    @media only screen and (min-width:500px) and (max-width:700px){
+        #box2{
+            display: block;
+            background-color:brown;
+        }
+    }
+        
+    @media only screen and (min-width:700px) and (max-width:1000px){
+        #box3{
+            display: block;
+            background-color: yellow;
+            color: black;
+        }
+    }
+         */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        margin: 2rem auto;
+        border: 2px solid black;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* flex-wrap: wrap; */
+        width: 90%;
+
+    }
+
+    .box {
+        margin: 1.2rem auto;
+        padding: .5rem;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 70%;
+        max-width: 250px;
+        height: 250px;
+        background-color: rgb(127, 123, 205);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+    p {
+        
+        width: 80%;
+        font-size: clamp(1rem,1rem + 2vw, 3rem)
+    }
+
+    button {
+        margin: 0.8rem;
+        padding: 0.4rem;
+        border-radius: 15px;
+        width: 90%;
+        height: 30px;
+        border: none;
+        background-color: rgb(225, 225, 115);
+    }
+
+    @media only screen and (min-width:900px) {
+        /* .container {
+            flex-direction: column;
+        } */
+        .container {
+            display: flex;
+            /* background-color: red; */
+        }
+    }
+/* *{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    margin: 1.5rem auto;
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+}
+h1{
+    font-size: 1rem;
+    text-align: center;
+    
+}
+#nav{
+    padding: 1.5rem;
+}
+#nav li{
+    list-style: none;
+}
+#nav li a{
+    color: red;
+    text-decoration: none;
+}
+#main-content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+ */
+
+</style>
+</head>
+
+<body>
+
+<!-- <div id ="container">
+<div id="sidebar">
+    <h1>Team Apna College</h1>
+    <ul id="nav">
+        <li><a href="https://en.wikipedia.org/wiki/WhatsApp">WhatsApp</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Facebook">Facebook</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Twitter">Twitter</a></li>
+    </ul>
+</div>
+<div id="main-content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima, ipsa vitae officia repudiandae aut! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, consequatur? Cum libero vero odio! Repellendus sit ipsum suscipit dignissimos numquam, illum repudiandae eaque magnam dolorem amet error neque rerum doloremque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima, ipsa vitae officia repudiandae aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas magni deleniti earum, consequatur adipisci fuga excepturi, corporis cum ullam vero magnam officia! Similique sapiente saepe, quaerat optio odio consectetur incidunt.</p>
+</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="box" id="box1">
+            <h1>This is a home Page </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat maiores necessitatibus.
+                Ipsa, id sunt?</p>
+            <button>Read More</button>
+        </div>
+        <div class="box" id="box2">
+            <h1>This is a About Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat maiores necessitatibus.
+                Ipsa, id sunt?</p>
+            <button>Read More</button>
+        </div>
+        <div class="box" id="box3">
+            <h1>This is a Front Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat maiores necessitatibus.
+                Ipsa, id sunt?</p>
+            <button>Read More</button>
+        </div>
+        <div class="box" id="box4">
+            <h1>This is a End Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat maiores necessitatibus.
+                Ipsa, id sunt?</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>

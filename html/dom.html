@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    /* background-color: black; */
+  }
+
+
+  /* #box {
+    color: rgb(1, 5, 8);
+    border: 2px solid red;
+    padding: 10px;
+  }
+
+  .card {
+    color: rgb(2, 5, 8);
+    padding: 10px;
+    border: 2px solid red;
+  }
+  #btn{
+    background-color: blue;
+    color: aliceblue;
+  } */
+  /* .color{
+background-color: yellow;
+color: rgb(197, 5, 5);
+  }
+  .dim{
+    border: 2px solid rgb(43, 0, 255);
+    padding: 80px;
+  }
+  img{
+    display: block;
+    margin-block: 300px;
+  } */
+#box{
+  height: 100px;
+  width: 100px;
+  background-color: blueviolet;
+}
+body{
+  height: 2000px;
+}
+
+
+</style>
+
+<body>
+
+  
+  
+  <!-- <ul id="menu">
+    <li>Home</li>
+    <li>product</li>
+    <li>about us</li>
+    
+  </ul> -->
+
+  
+  
+  
+  <!-- <div id="box"> -->
+    <!-- <h1>This a first box</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae iure perspiciatis illo, nihil
+        blanditiis cumque facere ipsa quos officiis non ad quia impedit similique nesciunt amet tempore sed doloremque
+        eveniet et omnis repudiandae ab? Aliquid ipsam sint a tempore.</p>
+        <p>lorepp</p>   -->
+        <!-- </div>   -->
+        <!-- <div class="card">
+          <h1 class="test">This is a second box</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi explicabo, unde voluptatem veniam ullam pariatur?
+      Facere tempora sapiente omnis incidunt!</p>
+    </div>
+    <div class="card">
+      <h1 class="test">This is a third box</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi explicabo, unde voluptatem veniam ullam pariatur?
+      Facere tempora sapiente omnis incidunt!</p>
+    </div>  -->
+
+
+  <!-- <button id="btn" name="box" onclick="buttonClick()">Click Me</button> -->
+  <!-- <button id="btn" name="box">Click Me</button> -->
+<!-- <img src="../images/darjeeling.jpg" loading="lazy" alt="error">
+<img src="../images/apple.png" loading="lazy" alt="error">
+<img src="../images/food image.jpg" loading="lazy" alt="error">
+<img src="../images/images.jpg" loading="lazy" alt="error">
+<img src="../images/images2.jpg" oading="lazy" alt="error">
+<img src="../images/misti doi image.jpg" loading="lazy" alt="error">
+<img src="../images/nature images.jpg" loading="lazy" alt="error">
+<img src="../images/pexels-photo-1640777.jpeg" loading="lazy" alt="error">
+<img src="../images/pizza.jpg" loading="lazy" alt="error">
+<img src="../images/rajasthan.jpg" loading="lazy" alt="error">
+<img src="../images/puri.jpg" loading="lazy" alt="error">
+<h1>loading....</h1> -->
+<!-- <div id="box" oncontextmenu="colorBox()"></div> -->
+<!-- <div id="box" ondblclick="colorBox()"></div> -->
+<!-- <div id="box" ondblclick="colorBox()"></div> -->
+<!-- <div id="box"></div> -->
+<!-- <div id="box" onmousedown="colorBox()"></div> -->
+<!-- <div id="box" onmouseup="colorBox()"></div> -->
+<!-- <div id="box" onmouseover="colorBox()"></div> -->
+<!-- <div id="box" onmouseout="colorBox()"></div> -->
+ <!-- <div id="box"></div> -->
+ <h1>hello</h1>
+</body>
+<script>
+
+// window.addEventListener("scroll" ,function(){
+  //   console.log("scrolling.....")
+  // })
+   window.addEventListener("wheel" ,function(event){
+       if(event.deltaY<0){
+        console.log("scrolling up...")
+       }
+       else if(event.deltaY>0){
+        console.log("scrolling down...")
+       }
+   })
+
+
+
+
+// // window.addEventListener("keydown",checkKey)
+// window.addEventListener("keyup",checkKey)
+
+// function checkKey(event){
+//     console.log(event.key)
+// }
+
+
+// let box=document.getElementById("box")
+
+// function colorBox(){
+//   alert(" event activated")
+// }
+// // box.addEventListener("dblclick", function(){
+// //   alert(" double click event")
+
+// // })
+
+
+
+
+// window.addEventListener("DOMContentLoaded",function(){
+//   // document.querySelector("h1").style.display = "block"
+//   console.log("DOM tree created")
+// })
+// window.addEventListener("load",function(){
+//   // document.write(document)
+//   document.querySelector("h1").style.display = "none"
+//   console.log("Fully loaded")
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   let idClass=document.getElementById("btn")
+//  function click1(){
+//   console.log("click1 was activated")
+//  }
+// function click2(){
+//   console.log("click2 was activated")
+// }
+
+// idClass.addEventListener("click",click1)
+// idClass.addEventListener("click",click2)
+// idClass.removeEventListener("click",click1)
+
+
+// function buttonClick(){
+//       alert("button was clicked")
+// }
+
+// let idClass=document.getElementById("btn")
+
+// idClass.addEventListener("click",buttonClick)
+
+
+// idClass.addEventListener("click",function(){
+//   // alert("botton was clicked")
+//   // console.log("botton was clicked")
+// })
+// idClass.addEventListener("mouseover",function(){
+//   // alert("mouse over is activated")
+//   // console.log("mouse over is activated")
+// })
+
+// idClass.addEventListener("mouseout",function(){
+//   // alert("mouse out is activated")
+//   // console.log("mouse out is activated")
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+//   let box=document.getElementById("box")
+
+// let width1=box.offsetWidth
+// console.log(width1)                     //border,padding included//
+// let height1=box.offsetHeight
+// console.log(height1)
+// let width=box.clientWidth
+// console.log(width)                     //border,padding not included//
+// let height=box.clientHeight
+// console.log(height)
+
+
+
+
+
+
+
+// let box=document.getElementById("box")
+// box.classList.toggle("dim")
+// box.classList.add("dim")
+// box.classList.remove("dim")
+// box.classList.replace("color","dim")
+// let result=box.classList.contains("color")
+// console.log(result)
+
+// console.log(box.classList)
+// for(let css of box.classList){
+//   console.log(css)
+// }
+
+// box.className +="dim"
+// console.log(box.className)
+
+
+
+
+
+// let btn=document.getElementById("btn")
+
+// let cssColor=getComputedStyle(btn)
+// console.log(cssColor.color)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let btn=document.getElementById("btn")
+
+// // btn.style.cssText="background-color:blue; color: white; border:none;"     //1//
+// // btn.setAttribute("style","background-color:blue; color: white;")  //2//
+
+// // btn.style.background="red"   //3//
+// btn.style.cssText+="background:red;border:2px solid green"   //3//
+
+
+
+
+
+// let btn=document.getElementById("btn")
+// btn.setAttribute("class","box")
+// let val=btn.getAttribute("name")
+// let val=btn.removeAttribute("name")
+// let val=btn.hasAttribute("name")
+// console.log(val)
+
+
+
+
+
+// let menu= document.getElementById("menu")
+// let liElement=document.createElement("li")
+// let liText=document.createTextNode("Services")
+// liElement.appendChild(liText)
+// let replaceElement=menu.firstElementChild.nextElementSibling
+// menu.replaceChild(liElement,replaceElement)
+
+
+
+
+
+
+//  let menu=document.getElementById("menu")
+//  let element=menu.firstElementChild.nextElementSibling.nextElementSibling
+//  menu.removeChild(element)
+  
+// let menu=document.getElementById("menu")
+
+// let cloneElement=menu.cloneNode(true)
+// cloneElement.id="mobailmenu"
+// let body=document.getElementsByTagName("body")[0]
+// console.log(body)
+// body.appendChild(cloneElement)
+// // console.log(cloneElement)
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let ulElement=document.querySelector("ul")                  //parent//
+// // let liNew=document.querySelectorAll("li")
+// // console.log(liNew)
+// console.log(ulElement)
+// let liElement=document.createElement("li")
+// let litext=document.createTextNode("list5")
+// liElement.appendChild(litext)
+// ulElement.appendChild(liElement)
+
+// let position=ulElement.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling
+// // console.log(position)
+// ulElement.insertBefore(liElement,position)
+
+
+// let liNew=document.querySelectorAll("li")[2]
+// console.log(liNew)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let intro=document.getElementById("intro")
+// console.log(intro)
+// let h1=document.createElement("h1")
+
+// h1.className="try"
+// h1.id="intro1"
+
+// let h1Text=document.createTextNode("this is a h1 tag")   //Method//
+
+// h1.appendChild(h1Text)
+
+// h1.textContent="content added"            //property//
+
+// let ptag=document.getElementById("p1")
+// console.log(ptag.textContent)
+
+// intro.appendChild(h1)
+
+// document.body.appendChild(h1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let body=document.getElementsByTagName("body")[0]
+// console.log(body)
+
+
+// let divElement=document.createElement("div")
+// let pElement=document.createElement("p")
+// let newPElement=document.createElement("p")
+// let h1Element=document.createElement("h1")
+
+// let pText=document.createTextNode(`Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum quae iure perspiciatis illo, nihil
+// //       blanditiis cumque facere ipsa quos officiis non ad quia impedit similique nesciunt amet tempore sed doloremque
+// //       eveniet et omnis repudiandae ab? Aliquid ipsam sint a tempore.`)
+//   let newPText=document.createTextNode("lorepp")    
+
+// let h1Text=document.createTextNode("This a first box")
+
+
+// h1Element.appendChild(h1Text)
+// pElement.appendChild(pText)
+// newPElement.appendChild(newPText)
+// divElement.appendChild(h1Element)
+// divElement.appendChild(pElement)
+// divElement.appendChild(newPElement)
+// body.appendChild(divElement)
+
+
+
+
+
+
+
+
+
+
+
+  //1.   let text=document.getElementById("box")
+  //     console.log(text)
+  //2.  let text= document.getElementsByClassName("card")
+  //     console.log(text)
+  //3. let text=document.getElementsByTagName("div")
+  // console.log(text)
+  //4. let text=document.querySelector("#box")
+  // console.log(text)
+  //5. let text=document.querySelectorAll(".card")
+  // console.log(text)
+  // let text = document.querySelector("#box")
+  // // console.log(text)
+  // let text1 = text.firstElementChild
+  // console.log(text1)
+// let text=document.querySelector("#box")
+// let text1=text.children
+// let text2=text1[0].nextElementSibling
+// console.log(text2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // let prg=document.getElementById("box")
+  // prg.innerHTML="<h1>this a heanding</h1>"
+  // let prg=document.getElementsByClassName("card")
+  // console.log(prg.length)
+  // for(let i=0;i<prg.length;i++){
+  //     prg[i].innerHTML="<h1>this a heanding</h1>"
+  // console.log(prg)
+  // }
+  // let prg1=document.getElementById("box")
+  // let prg=prg1.getElementsByTagName("p")
+  // for(let i=0;i<prg.length;i++){
+  //     prg[i].innerHTML="hi"
+  // }
+  // console.log(prg)
+  // let prg = document.querySelectorAll("h1.test")
+  // // prg.innerHTML="hi"
+  // for (let i = 0; i < prg.length; i++) {
+  //   prg[i].innerHTML = "hi"
+  // }
+  // console.log(prg)
+
+  // let prg=document.getElementById("box")
+  // let text=prg.parentElement
+  // text.innerHTML="hi"
+  // console.log(text)
+  // let prg=document.getElementsByClassName("card")
+  // let num=prg.lastElementChild
+  // let num=prg.children
+  // let num=prg[0].previousElementSibling
+  // console.log(prg)
+  // console.log(num)
+
+  // let prg=document.getElementById("box")
+  // prg.innerHTML="<h1> this a box<h1>"
+  // console.log(prg)
+
+
+
+
+
+</script>
+
+</html>

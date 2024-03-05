@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    /* div {
+        border: 2px solid red;
+    }
+
+    #pic {
+        border: 5px solid blue;
+    }
+    #btn{
+        background-color: pink;
+    } */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        /* background-color: black; */
+    }
+
+    #container {
+        width: 100vw;
+        height: 100vh;
+        /* margin: 2rem; */
+        /* border: 1px solid red; */
+    }
+
+    .fruit {
+        width: 40%;
+        max-width: 400px;
+        height: 500px;
+        margin: 10rem auto;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(231, 236, 240);
+        position: relative;
+        border-radius: 10px;
+        /* box-shadow: 2px 40px rgb(220, 214, 214); */
+    }
+
+    #pic {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        /* border: 1px solid red; */
+        padding: 2rem;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        position: absolute;
+        top: -10%;
+    }
+
+    h1 {
+        color: red;
+        font-size: 2.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p {
+        /* text-align: center;
+        margin: 1rem;
+        padding: 10px; */
+        color: gray;
+    }
+
+    #pricebar {
+        /* margin: 1rem; */
+
+    }
+
+    th,
+    td {
+        /* background-color: red; */
+        padding: .5rem;
+        text-align: center;
+    }
+
+    button {
+        background-color: red;
+        width: 50%;
+        /* height: 40px; */
+        font-size: 1.2rem;
+        /* margin: 5px; */
+        padding: 15px 30px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        bottom: -5%;
+    }
+    i{
+        position: absolute;
+        top: 50%;
+    }
+    #left {
+        left: 0;
+        transform: rotateY(180deg)
+    }
+    #right {
+        right: 0;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div class="fruit">
+            <img src="./images/images.jpg" alt="error">
+            <div id="pic">
+                <h1>Strawberries</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam,Lorem ipsum dolor sit amet
+                    consectetur,
+                    adipisicing elit. Vero mollitia odit quisquam.</p>
+                <i id="right" class="fa-solid fa-arrow-right"></i>
+                <i id="left" class="fa-solid fa-arrow-right"></i>
+                <!-- <i id="left" class="fa-solid fa-arrow-left"></i> -->
+            </div>
+            <div id="pricebar">
+                <table>
+                    <thead>
+                        <th>Quantity</th>
+                        <th> Total Price</th>
+                        <th>Delivery</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>- 1 +</td>
+                            <td>$ 7</td>
+                            <td> in 60 mins</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button>ADD TO CART</button>
+            
+        </div>
+    </div>
+</body>
+
+</html>

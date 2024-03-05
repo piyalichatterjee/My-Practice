@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box {
+            background-color: red;
+            width: 80%;
+            max-width: 500px;
+            height: 600px;
+            min-height: 400px;
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box" id="box1">
+        <h1>This is my home page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis optio amet fuga laudantium repudiandae
+            maxime? Dignissimos, nostrum voluptate dolor aspernatur voluptates praesentium tempore accusamus inventore?
+            Ut excepturi eum nostrum aliquid?</p>
+    </div>
+    <div class="box" id="box2">
+        <h1>This is my about page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis optio amet fuga laudantium repudiandae
+            maxime? Dignissimos, nostrum voluptate dolor aspernatur voluptates praesentium tempore accusamus inventore?
+            Ut excepturi eum nostrum aliquid?</p>
+    </div>
+    <input type="text">
+</body>
+<script>
+
+
+    // DOM Document object model
+    // array nodelist htmlcollection
+    // const box = document.getElementsByClassName("box")
+    // const box = document.getElementById("box1")
+    // const box = document.querySelector("#box1")
+    // const box = document.querySelectorAll(".box")
+    // const box = document.getElementsByTagName("div")
+    // console.log(box)
+    // const box = document.querySelector("#box2")
+    // let result = box.firstElementChild
+    // let result = box.children
+    // let result = box.lastElementChild
+    // let result = box.nextElementSibling
+    // let result = box.previousElementSibling
+    // console.log(box)
+    // let box=document.getElementsByClassName("box")
+    // console.log(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // My practice \\
+    // let a = 10
+    // let b = 8
+    // console.log("a + b = ", a + b)
+    // console.log("a - b = ", a - b)
+    // console.log("a / b = ", a / b)
+    // console.log("a ** b = ", a ** b)
+    // console.log("a % b = ", a % b)
+    // console.log("++a = ", ++a)
+    // console.log("a++ = ", a++)
+    // console.log("--a = ", --a)
+    // console.log("a-- = ", a--)
+    // console.log("a = ", a)
+    // console.log("a-- = ", a--)
+    /*
+     let sum = 0
+     let n = prompt("Enter the value of n")
+     // console.log(n)
+     n = Number.parseInt(n)
+     for (let i = 0; i < n; i++) {
+         sum += (i + 1)
+     }
+     console.log("sum of first " + n + " natual number is " + sum)
+     */
+    /*
+    let num=0
+    for(let i=1;i<10;i++){
+        num+=i
+    }
+    console.log(num)
+    let num1="2"
+    num1=Number.parseInt(num1)
+    console.log(num1)
+    let newnum2=Number(num1)
+    console.log(newnum2)
+*/
+    // let n=prompt("enter the value of n")
+    // n=Number.parseInt(n)
+    // i=0
+    // while(i<n){
+    //     console.log(i)
+    //     i++
+    // }
+    // let num=0
+    // let i=0
+    // while(i<100){
+    //     i++
+    //     num+=i
+
+    // }
+    // console.log(num)
+    /*
+    function add(x,y){
+        let a=x+y
+        return a
+    }
+     console.log(add(4,5))   //1//
+    let b=add(4,5)           //2//
+    console.log(b)
+    */
+    // let name="piyalichatterjeelhkuiljj"
+    // for(i=0;i<name.length;i++){
+    //     console.log(name[15])
+    // }
+    // console.log(name.toUpperCase())
+    // console.log(name.toLowerCase())
+    // console.log(name.slice(1))
+    // console.log(name.replace())
+    // let friend="       chatterjee"
+    // console.log(friend)
+    // console.log(name.concat(" is a friend of ",friend, " ok"))
+    // console.log(friend.trim())
+
+    // let arr=[1,8,6,2,4]
+    // let arr2=arr.toString()
+    // let arr3=arr.join(" - ")
+    // let arr4=[2,5,9,7,67,68,45]
+    // let newarr=[54,87,96,74,63]
+    // let newarr1=[52,36,12]
+    // console.log(arr4)
+    // console.log(arr4.concat(newarr,newarr1))
+    // let compare=(a,b)=>{
+    //     return b-a
+    // }
+    // let arr=[5,10,2,7,6,3,456]
+    // arr.sort(compare)
+    // console.log(arr)
+    // let arr=[5,4,6,3,12,458,14,258]
+    // let newarr=arr.slice(2,4)
+    // console.log(newarr)
+    // let arr2=arr.splice(2,3,50,60,90,70)
+    // console.log(arr)
+    // console.log(arr2)
+    // let num = [1, 2, 8, 9, 7]
+    // for(let i=0;i<num.length;i++){
+    //     console.log(num[i]*num[i])
+    // }
+    // num.forEach((e) => {
+
+    // })
+
+    // array.from
+    // let name = "piyali"
+    // let arr = Array.from(name)
+    // console.log(arr)
+
+    // for(let i of num){
+    //     console.log( i)
+    // }
+
+    // for(let i in num){
+    //     console.log(typeof i)
+    // }
+    //  Array Map method //
+    // let arr=[55,99,74,63]
+    // console.log(arr)
+    // let num =arr.map((value,index,array)=>{
+    //     console.log(value,index,array)
+    //     return value + index
+    // })
+    // console.log(num)
+
+    //  Array filter method //
+    // let arr= [48,9,76,36,20,10,3]
+    // let arr2=arr.filter((value)=>{
+    // // console.log(value)
+    //  return value<30    
+    // })
+    // console.log(arr2)
+
+    //  Array reduce method //
+    // 45
+
+    // for foreach map
+
+    // let arr = [1, 2, 3, 4, 5]
+    // let arr = [
+    //     {
+    //         name : "h"
+    //     },
+    //     {
+    //         name : "r"
+    //     },
+    //     {
+    //         name:"j"
+    //     }
+    // ]
+    // let arr1 = []
+    // const temp = arr.forEach((e,i)=> {
+    //     arr1.push(e*10)
+
+    //     return 10
+    //     console.log(i)
+    // })
+    // console.log(arr1)
+
+    // const temp = arr.map((e) => {
+    //     return e
+    // })
+    // const temp = arr.map((e) => e*10) 
+    // const temp = arr.map((e) => {
+
+    //     return e === 2
+
+    // })
+
+    // const temp = arr.filter((e) => (e>2))
+
+    // console.log(temp)
+    // const box1 = document.querySelector("#box1")
+    // const input = document.querySelector("input")
+    // function test (e) {
+    //     console.log(e.target.value)
+    // }
+    // // box1.addEventListener("mouseout",test)
+    // console.log(box1)
+
+    // box1.addEventListener("click",(e) => {
+    //     console.log(e)
+    // })
+    const students = [
+        {
+            name: "John Doe",
+            id: 1,
+            marks: 85,
+            grade: "A",
+            phoneno: "123-456-7890",
+            age: 20
+        },
+        {
+            name: "Jane Smith",
+            id: 2,
+            marks: 75,
+            grade: "B",
+            phoneno: "987-654-3210",
+            age: 21
+        },
+        {
+            name: "Alice Johnson",
+            id: 3,
+            marks: 90,
+            grade: "A",
+            phoneno: "555-555-5555",
+            age: 19
+        },
+        {
+            name: "Michael Brown",
+            id: 4,
+            marks: 80,
+            grade: "B+",
+            phoneno: "777-777-7777",
+            age: 22
+        },
+        {
+            name: "Emily Davis",
+            id: 5,
+            marks: 95,
+            grade: "A+",
+            phoneno: "888-888-8888",
+            age: 20
+        },
+        {
+            name: "Robert Wilson",
+            id: 6,
+            marks: 65,
+            grade: "C",
+            phoneno: "999-999-9999",
+            age: 23
+        },
+        {
+            name: "Sophia Garcia",
+            id: 7,
+            marks: 88,
+            grade: "A",
+            phoneno: "111-222-3333",
+            age: 20
+        },
+        {
+            name: "Daniel Martinez",
+            id: 8,
+            marks: 78,
+            grade: "B",
+            phoneno: "444-555-6666",
+            age: 21
+        },
+        {
+            name: "Olivia Lee",
+            id: 9,
+            marks: 92,
+            grade: "A",
+            phoneno: "777-888-9999",
+            age: 19
+        },
+        {
+            name: "William Taylor",
+            id: 10,
+            marks: 73,
+            grade: "C+",
+            phoneno: "123-987-6543",
+            age: 22
+        }
+        // Add more objects as needed
+    ]
+
+    // let students2 = []
+ //1.   // let students1 = students.filter((a) => a.age > 20)  //1//
+    // let temp = students1.map((e) => e.name)
+    // console.log(temp)
+     // console.log(students)
+// let students1=students.filter((a)=>{                    //2//
+//        return a.age>20
+// })
+//     // console.log(students1)
+//     let temp=students1.map((e)=>{
+//         return e.name
+//     })
+//     console.log(temp)
+// 2nd program
+// let num=students.filter((a)=>{
+//     return a.marks<90
+// })
+// let num1=num.map((a)=> ({
+//         name : a.name,
+//         grade : a.grade,
+//         marks : a.marks}))
+
+// console.log(num1)
+
+// 3rd program
+
+let text=students.filter((a)=>{
+    if(a.name[0].toLowerCase()==="j"){
+        return a.name[0]
+    }
+})
+// console.log(text)
+let person=text.map((a)=>({
+    name : a.name,
+    phoneno : a.phoneno
+}))
+// console.log(person)
+// let num=text.map((a)=>{
+//     return a.phoneno
+// })
+console.log(person)
+
+
+
+
+
+
+
+
+    // [
+    //     {
+    //         name: "Olivia Lee",
+    //         marks: 92,
+    //     },
+    //     {
+    //         name: "William Taylor",
+    //         marks: 73,
+    //     }
+    // ]
+
+
+
+
+
+
+
+    // 1. age greater than 20 => array of name
+    // 2. marks less than 90 => array of grade and name
+    // 3. name starts with j => array of name and phoneno
+    // const temp = Math.ceil(Math.random()*(20-10)) + 10
+    // console.log(temp)
+
+
+
+</script>
+<script src="harry.js"></script>
+
+</html>

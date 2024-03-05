@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(225, 222, 228);
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            /* background-color: rgb(225, 222, 228); */
+            /* margin: 25px; */
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #size {
+            /* border: 2px solid black; */
+            background-color: grey;
+            width: 40%;
+            max-width: 300px;
+            height: 500px;
+            /* margin: auto; */
+            /* padding: 1rem; */
+            border-radius: 30px;
+        }
+
+        #icon {
+            height: 150px;
+            width: 150px;
+            margin: auto;
+            border: 10px solid rgb(215, 10, 174);
+            border-radius: 50%;
+            position: relative;
+            bottom: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            background-color: white;
+        }
+        .test {
+            height: 80%;
+        }
+
+        #pic {
+            /* border: 1px solid red; */
+            /* height: 100%; 
+            width: 100%; */
+            font-size: 5rem;
+            position: relative;
+            bottom: 5px;
+        }
+
+        #card {
+            margin: 0 1rem;
+            /* padding: 1rem; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #git {
+            /* width: 80%;
+            margin: 0 20px;
+            padding: 20px; */
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* border: 1px solid black; */
+            font-size: 3rem;
+            color: deeppink;
+        }
+        /* #git > * {
+            background-color: white;
+        } */
+
+        #last {
+            background-color: palevioletred;
+            height: 20%;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            /* width: 100%; */
+            /* border: 2px solid red; */
+        }
+
+        h1 {
+            color: rgb(206, 12, 206);
+            margin: 10px;
+        }
+
+        h2,
+        h4 {
+            margin: 10px;
+            color: white
+        }
+
+        h3 {
+            text-align: center;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="size">
+            <div class="test">
+                <div id="icon">
+                    <i id="pic" class="fa-solid fa-user"></i>
+                </div>
+                <div id="card">
+                    <h1>Your Name</h1>
+                    <h4>yourname@amil.com</h4>
+                    <h2>Developer | Designer</h2>
+                </div>
+                <div id="git">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div id="last">
+                <h3>120k Followers | 10k Following</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

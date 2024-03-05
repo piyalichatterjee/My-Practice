@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* body{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+
+ } */
+    .container {
+        /* border: 1px solid red; */
+        /* background-color: rgb(197, 231, 197); */
+        background-image: linear-gradient(rgb(226, 226, 146), rgb(148, 194, 148));
+        /* margin: 2rem; */
+        /* width: 100%; */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .card {
+        /* border: 1px solid blue; */
+        width: 70%;
+        max-width: 600px;
+        height: 300px;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(232, 237, 241);
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    img {
+        width: 30%;
+        height: 100%;
+        /* object-fit: cover; */
+        /* border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px; */
+        /* object-fit: cover; */
+    }
+
+    .icon {
+        /* position: relative; */
+        /* bottom: 6rem;
+        right: 2.1rem; */
+        position: absolute;
+        left: 23%;
+        top: 10%;
+        font-size: 4rem;
+        border: 9px solid white;
+        border-radius: 50%;
+        /* width: 100px;
+        height: 100px; */
+    }
+
+    #ant {
+        /* border: 2px solid red; */
+        position: relative;
+        /* top: 30px;
+        right: 50px; */
+        height: 70%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        /* align-items: baseline; */
+        /* padding: 50px; */
+        margin: 20px;
+        /* width: 50%; */
+        /* height: 200px; */
+    }
+
+    h1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: green;
+        font-size: 1rem;
+    }
+
+    h2 {
+        position: absolute;
+        left: 0;
+        top: 30%;
+
+        font-size: 1.5rem;
+    }
+
+    p {
+        padding: 20px 0;
+    }
+
+    #contact {
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: green;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./images/images.jpg" alt="error">
+            <div class="icon">
+                <i class="fa-regular fa-face-smile"></i>
+            </div>
+            <div id="ant">
+                <h1>Ant Collector</h1>
+                <h2>Morgan Sweeney</h2>
+                <p>Morgan has collected ants since they were six years old and now has many dozen ants but none in their
+                    pants.</p>
+                <div id="contact">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
