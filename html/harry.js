@@ -1,15 +1,15 @@
 // Chapter -1 //
-// 1. crate a variable of type sting and try to add a number to it ?
+// 1. Create a variable of type string and try to add a number to it ?
 // let num1 = "piyali"
 // let num2= 74
 // console.log(num1 +" "+ num2)
 
-// 2. Use typeof opreratar to find the datatype of the String n last question?
+// 2. Use typeof operator to find the datatype of the String n last question?
 // let num1 = "piyali"
 // let num2= 74
 // console.log(typeof num1)
 // console.log(typeof num2)
-// 3.cratea const object in javascript can you change it to hold a number later?
+// 3.create const object in javascript can you change it to hold a number later?
 // const obj = {
 //     name: "Piyali",
 //     age: 5
@@ -26,24 +26,26 @@
 //      obj["friend"] = "Abhradip"
 //      console.log(obj)
 
-// 5.write a js program to create a ward mcaning dictionary of words?
+// #############################################
+
+// 5.write a js program to create a word meaning dictionary of words?
 // let dict={
 //     Immediately:"at once,right away",
-//     Apreciate:"to understand the worth or importance of (something or someone)",
+//     Appreciate:"to understand the worth or importance of (something or someone)",
 //     Apologize:"to express regret for something done or said ",
 //     Depression:"a common mental disorder",
-//     decision:" a judgment, conclusion, or resolution reached or given; verdict"
+//     Decision:" a judgment, conclusion, or resolution reached or given; verdict"
 // }
 // console.log(dict.Apologize)
 // Chapter -2 //
-// 1.use logical opertors to fine whether the age og a person lies between 10 and 20?
+// 1.use logical operators to find whether the age of a person lies between 10 and 20?
 // let age= 42
 // if(age>=10 && age<=20){
 //     console.log("Your age lies between 10 and 20")
 // }
 // else{
 
-//  console.log("Your age doesnt lies between 10 and 20")
+//  console.log("Your age doesn't lies between 10 and 20")
 // }
 // 2.demonstrate the use of switch case statements in javascript
 
@@ -90,7 +92,10 @@ else {
 
 //     console.log("Your number is not divisible by 2 and 3")
 // }
-// 5.print "you can Drive "or "you cannot Drive" based on age qreater than 18 using ternary opertor
+
+// ###########################################
+
+// 5.print "you can Drive "or "you cannot Drive" based on age greater than 18 using ternary operator
 // let age = 78
 // if (age >= 18) {
 //     console.log("you can drive")
@@ -113,17 +118,19 @@ for (i=0;i<Object.keys(student).length;i++){
     console.log("The marks of " + Object.keys(student)[i] + " are " + student[Object.keys(student)[i]])
 }
 
+// ###############################
+
 // 2.Write the program in Q1 using for in loop?
 
 for (let i in student){
     console.log("The marks of " + i + " are "+ student[i])
 }
 */
-// 3.Write a program to print "try aging" until the uses the correct number?
+// 3.Write a program to print "try again" until the uses the correct number?
 // let num = 50
-// let a 
+// let a = null
 // while (a != num) {
-//     console.log("try aging")
+//     console.log("try again")
 //     a = prompt("enter a number")
 // }
 // console.log("you have entered a correct number")
@@ -138,34 +145,44 @@ for (let i in student){
 // let mean1=Math.floor(mean(40,55,66,74,84,93))
 // console.log(mean1)
 // Chapter -4 //
-// 1. what will the following print in javasctipt?
+// 1. what will the following print in javascript?
 // let str="piyali\""
 // console.log(str.length)
-// 2.explore the includes starts with & ends with functions tof a string?
+
+// ############################################
+
+// 2.explore the includes starts with & ends with functions to a string?
 // let str="Serampore College is located in Serampore, in West Bengal state, India. Established in 1818, it is the third oldest college in the country after CMS College, Kottayam and Presidency College "
 // let word="Serampore"
 // console.log(str.includes(word))
 // console.log(str.startsWith(word))
 // console.log(str.includes(word))
 
+// ########################################
 
 // 3.write a program to convert a given string to lowercase?
 // let str="Durga Puja is a famous Hindu festival when Goddess Durga is worshipped. Durga Puja is also known as Durgotsava. Durgotsava refers to all five day"
 // console.log(str.toLowerCase())
-// 4.extact the amout out of this sting "Please five Rs 1000"?
+// 4.extract the amount out of this string "Please five Rs 1000"?
 // let str="Please give Rs 1000"
 //  let amount=str.slice("Please give Rs".length)  //1//
 // let amount=str.slice(15)  //2//
 // console.log(amount)
 // console.log(typeof amount)
-// let srt = Number.parseInt(amount)
-// console.log( typeof srt)
+
+// #################################
+
+// let str = Number.parseInt(amount)
+// console.log( typeof str)
 // 4.Try to change 4th character of a given string were you able to do it?
 // let friend="puja"
 // friend[2]="k"
-// console.log(friend)  // friend is not change because srting is immutable\\
+// console.log(friend)  // friend is not change because string is immutable\\
+
+// ##################################
+
 // Chapter -5 //
-//1. Crate an array of number and take input from the user to add numbers to this array?
+//1. Create an array of number and take input from the user to add numbers to this array?
 // let arr=[4,5,6,2]
 // let num=prompt("enter a number")
 // num=Number.parseInt(num)
