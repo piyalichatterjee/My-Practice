@@ -7,25 +7,50 @@
     <title>Document</title>
 </head>
 <style>
-    .btn{
+    /* .btn{
         background-color: blue;
         color: aliceblue;
 
-    }
+    } */
 </style>
 <body>
-
-    <div id="box">
+    
+    <div>
+        <ul id="box">
+            <li>Home</li>
+            <li>Product</li>
+        </ul>
+    </div>
+    <!-- <div id="box">
         <p>Lorem ipsum dolor sit.</p>
         <h1>handing</h1>
         <p>Lorem ipsum dolor sit amet consectetur.</p>
     </div>
     <div class="box1">
         <h1>piyali</h1>
-    </div>
+    </div> -->
     <!-- <button class="btn" id="box" onclick="buttonClick()" onmousemove="buttonOver()">Contact Us</button> -->
     <!-- <button class="btn" id="box">Contact Us</button> -->
     <script>
+        //ul li home products li javascript about us
+
+    let idName=document.getElementById("box")
+    let liElement=document.createElement("li")
+    let liText=document.createTextNode("About us")
+
+    liElement.appendChild(liText)
+    idName.appendChild(liElement)
+     
+    let removeElement=idName.firstElementChild.nextElementSibling
+    idName.removeChild(removeElement)
+    let h1Element=document.createElement("h1")
+    let h1Text=document.createTextNode("home")
+    h1Element.appendChild(h1Text)
+    // idName.appendChild(h1Element)
+    let replaceElement=idName.firstElementChild
+    idName.replaceChild(h1Element,replaceElement) 
+
+
 
 // let box=document.getElementById("box")
 // let box=document.getElementsByClassName("box")
@@ -36,15 +61,15 @@
 // let box=document.querySelectorAll("p")[1]
 // let result=box.previousElementSibling
 
-let box=document.querySelectorAll("#box")[0]
-console.log(box)
-let h1Element=document.createElement("h1")
-let h1Text=document.createTextNode("This is home page")
+// let box=document.querySelectorAll("#box")[0]
+// console.log(box)
+// let h1Element=document.createElement("h1")
+// let h1Text=document.createTextNode("This is home page")
 
 
 
-h1Element.append(h1Text)
-box.append(h1Element)
+// h1Element.append(h1Text)
+// box.append(h1Element)
 
 
 

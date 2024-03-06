@@ -100,25 +100,25 @@ else {
 // }
 // Chapter -3 //
 // 1. Write a program to print the marks of a student in an object using for loop?
-/*
-let student={
-    piyali:90,
-    abhradip:95,
-    puja:87,
-    kuheli:85,
-    pubali:50
-}
 
-for (i=0;i<Object.keys(student).length;i++){
-    console.log("The marks of " + Object.keys(student)[i] + " are " + student[Object.keys(student)[i]])
-}
+// let student={
+//     piyali:90,
+//     abhradip:95,
+//     puja:87,
+//     kuheli:85,
+//     pubali:50
+// }
+
+// for (i=0;i<Object.keys(student).length;i++){
+//     console.log("The marks of " + Object.keys(student)[i] + " are " + student[Object.keys(student)[i]])
+// }
 
 // 2.Write the program in Q1 using for in loop?
 
-for (let i in student){
-    console.log("The marks of " + i + " are "+ student[i])
-}
-*/
+// for (let i in student){
+//     console.log("The marks of " + i + " are "+ student[i])
+// }
+
 // 3.Write a program to print "try aging" until the uses the correct number?
 // let num = 50
 // let a 
@@ -171,7 +171,7 @@ for (let i in student){
 // num=Number.parseInt(num)
 // arr.push(num)
 // console.log(arr)
-// 2.keep adding number to the array in 1 until 0 is added to the array?
+// 2.kee5p adding number to the array in 1 until 0 is added to the array?
 //  let arr=[4,5,6,3]
 //  let a
 // do {
