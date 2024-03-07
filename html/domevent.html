@@ -1,33 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div id="box">
         <ul>
-            <li>home</li>
+            <li class="text">home</li>
             <li>page</li>
         </ul>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo pariatur ut consectetur incidunt repellat?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo pariatur ut consectetur incidunt repellat?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo pariatur ut consectetur incidunt repellat?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo pariatur ut consectetur incidunt repellat?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo pariatur ut consectetur incidunt repellat?</p>
-        <h1>hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae
+            debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo pariatur
+            ut consectetur incidunt repellat?</p>
+        <p class="text">Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore,
+            molestiae debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo
+            pariatur ut consectetur incidunt repellat?</p>
+        <p>Lorem 5
+            ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae
+            debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo pariatur
+            ut consectetur incidunt repellat?</p>
+        <div id="text1">
+            <p>Lorem ipsum 4dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore,
+                molestiae debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit
+                illo pariatur ut consectetur incidunt repellat?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae
+                debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo
+                pariatur ut consectetur incidunt repellat?</p>
+            <h1 class="text">hello</h1>
+            <h1 class="text">hello2</h1>
+        </div>
         <h2>this is a home page</h2>
     </div>
-   <div> <p>hjj</p></div>
+    <div>
+        <p>hjj</p>
+    </div>
 </body>
 <script>
-    let bodyTag=document.getElementsByTagName("div")[0]
-    console.log()
-    (bodyTag)
-    let box=document.getElementById("box")
-    // let bodyTag=document.querySelectorAll("#box")
 
-    console.log(box)
+
+
+
+// let divElement=document.getElementsByTagName("div")
+// let divElement=document.querySelectorAll("div")[1]
+// let box=divElement.parentElement
+// console.log(divElement)
+// console.log(box)
+
+
+      
+    // let box = document.getElementById("box")
+    // console.log(box)
+    // let boxChild = box.children
+    // console.log(boxChild)
+
+
+
+
+
+
+
+    // let box=document.getElementById("text1")
+    // let h1Element=document.createElement("h1")
+    // h1Element.textContent="This is a heading"
+    // box.appendChild(h1Element)
+
+    // let h1Position=box.firstElementChild.nextElementSibling.nextElementSibling
+    // box.insertBefore(h1Element,h1Position)
+
+
+
+
+    // let textElement=document.querySelectorAll("p .text")[0]
+    // let textElement=document.querySelector("p .text")
+    // console.log(textElement.textContent)
+
+    // let h1Element=document.createElement("h1")
+    // h1Element.className="try"
+    // h1Element.id="tag"
+    // h1Element.textContent="content added"
+
+    // let h1Text=document.createTextNode("My name is Piyali")
+    // h1Element.appendChild(h1Text)
+    // textElement.appendChild(h1Element)
+
+    // console.log(h1Element)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // let div1=document.getElementById("text1")
+    // let childElement=div1.firstElementChild.nextElementSibling.nextElementSibling.previousElementSibling.previousElementSibling.nextElementSibling.nextElementSibling
+    // childElement.innerHTML="hi"
+    // console.log(childElement)
+
+
+    // let textElement=document.getElementById("text1")
+    // let parentElement=textElement.parentElement
+    // parentElement.innerHTML="hello"
+    // console.log(parentElement)
+
+
+    // let h1Element = document.querySelectorAll("h1.text")
+    // for (let i = 0; i < h1Element.length; i++) {
+    //     h1Element[i].innerHTML = "hi"
+
+    // }
+    // let bodyTag=document.getElementsByTagName("div")[1]
+    // bodyTag.innerHTML="<p> hello</p>"
+    // let box=document.getElementById("box")
+    // let bodyTag=document.querySelectorAll("#box")
+    //   let textElement=document.getElementsByClassName("text")
+    //   console.log(textElement)
+    //   for(let i=0;i<textElement.length;i++){
+    //      let p= textElement[i].innerHTML="<h1>piyali</h1>"
+    //      console.log(p)
+    //   }
+    // let div1 = document.getElementById("div1")
+    // let pElement=document.getElementsByTagName("p")
+
+    // let pElement1 = div1.getElementsByTagName("p")
+    // console.log(pElement1)
+    // for (let i = 0; i < pElement1.length; i++) {
+    //     let p = pElement1[i].innerHTML = "<h1>piyali</h1>"
+    //     console.log(p)
+    // }
+
 </script>
+
 </html>
