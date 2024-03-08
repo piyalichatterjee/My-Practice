@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+<style>
+    #text2{
+        background-color:red;
+        color:white
+    }
+</style>
 <body>
     <div id="box">
         <ul>
@@ -35,11 +40,128 @@
         </div>
         <h2>this is a home page</h2>
     </div>
-    <div>
+    <div id ="text2"style="color">
         <p>hjj</p>
     </div>
 </body>
 <script>
+
+
+
+    let box= document.getElementById("text2")
+    let css= getComputedStyle(box)
+    console.log(css.color)
+
+
+
+    // let box= document.getElementById("text1")
+ 
+    // let text=box.firstElementChild.nextElementSibling
+    // console.log(text)
+    // text.style.cssText="background:red;color:white;"
+    // text.style.color="blue"
+    // text.setAttribute("style","background:yellow")
+
+// box.style.color="red"
+// box.style.background="yellow"
+// box.style.background="border:2px solid black"
+
+// box.style.cssText +="border:2px solid black"
+
+
+
+// box.setAttribute("style","background-color:red;color:white")
+    // box.style.cssText="background-color:red;color:white;"
+    
+
+
+
+
+
+// let box= document.getElementById("text2")
+// box.setAttribute("class","box1")
+// let val=box.getAttribute("id")
+// let val=box.removeAttribute("id")
+// let val=box.hasAttribute("name")
+// console.log(val)
+
+
+// let idBox=document.getElementById("text1")
+
+// let classTest = document.getElementsByTagName("div")
+
+// let div1=document.getElementById("text2")
+// console.log(div1)
+
+// idBox.insertAdjacentElement("afterbegin",div1)
+// // console.log()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let idBox=document.getElementById("text1")
+
+// let h1Element=document.createElement("h1")
+// h1Element.textContent="piyali"
+
+// let replaceElement=idBox.lastElementChild
+// console.log(replaceElement)
+
+// idBox.replaceChild(h1Element,replaceElement)
+
+ 
+    // let box=document.getElementById("box")
+    // let removeElement1=box.firstElementChild.lastElementChild
+    // console.log(removeElement1)
+    // // let removeElement1=removeElement.firstElementChild
+    // removeElement1.parentElement.removeChild(removeElement1)
+    // console.log(removeElement1)
+
+
+
+
+// let box=document.querySelectorAll("#text1 .text")[1]
+// console.log(box)
+
+// let idElement=document.querySelector("#text1")      //1//
+// console.log(idElement)
+
+
+// let textClone=box.cloneNode(true)
+
+// idElement.appendChild(textClone)
+
+// // let textClone=box.cloneNode(true)
+
+// // box.parentElement.appendChild(textClone)           //2//
+ 
+// // let parent1=box.parentElement                       //3//
+// // console.log(parent1)
+
+// // parent1.appendChild(textClone)
+// // console.log(textClone)
+
+
+
+
+
+
+   
+
+
+
+
 
 
 
