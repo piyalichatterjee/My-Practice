@@ -23,12 +23,67 @@
             background-color: black;
             color: white;
         }
+        ul{
+            display: flex;
+            background-color: rgb(199, 171, 225);
+        }
+        li{
+            list-style: none;
+            padding:20px;
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="box" id="box1">
+     <!-- harry domPractice  -->
+<!-- <nav id="navbar">
+    <ul id="list">
+        <li class="test">Home</li>
+        <li class="test">About</li>
+        <li class="test">Contact us</li>
+    </ul>
+</nav> -->
+<!-- <table id="list">
+     <tr>Table 1</tr>
+     <tr>Table 2</tr>
+     <tr>Table 3</tr>
+</table> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="box" id="box1">
         <h1>This is my home page</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis optio amet fuga laudantium repudiandae
             maxime? Dignissimos, nostrum voluptate dolor aspernatur voluptates praesentium tempore accusamus inventore?
@@ -40,9 +95,30 @@
             maxime? Dignissimos, nostrum voluptate dolor aspernatur voluptates praesentium tempore accusamus inventore?
             Ut excepturi eum nostrum aliquid?</p>
     </div>
-    <input type="text">
+    <input type="text"> -->
+
+<span id="first"><b>hi</b>hey i am span</span>
+
 </body>
 <script>
+let s=document.getElementsByTagName("span")[0]
+// console.log(s)
+let s1=document.getElementsByTagName("span")[0]
+// console.dir(s)     //object //
+
+
+let a=document.body.firstChild.nodeName
+console.log(a)
+let a1=document.body.firstElementChild.nodeName
+console.log(a1)
+
+let word=document.getElementById("first")
+// console.log(word.innerHTML)
+// console.log(word.innerHTML="<h1>hello</h1>")
+// console.log(word.outerHTML)
+// console.log(word.outerHTML="<div>hello</div>")
+// console.log(document.body.textContent)
+
 
 
     // DOM Document object model
@@ -267,89 +343,89 @@
     // box1.addEventListener("click",(e) => {
     //     console.log(e)
     // })
-    const students = [
-        {
-            name: "John Doe",
-            id: 1,
-            marks: 85,
-            grade: "A",
-            phoneno: "123-456-7890",
-            age: 20
-        },
-        {
-            name: "Jane Smith",
-            id: 2,
-            marks: 75,
-            grade: "B",
-            phoneno: "987-654-3210",
-            age: 21
-        },
-        {
-            name: "Alice Johnson",
-            id: 3,
-            marks: 90,
-            grade: "A",
-            phoneno: "555-555-5555",
-            age: 19
-        },
-        {
-            name: "Michael Brown",
-            id: 4,
-            marks: 80,
-            grade: "B+",
-            phoneno: "777-777-7777",
-            age: 22
-        },
-        {
-            name: "Emily Davis",
-            id: 5,
-            marks: 95,
-            grade: "A+",
-            phoneno: "888-888-8888",
-            age: 20
-        },
-        {
-            name: "Robert Wilson",
-            id: 6,
-            marks: 65,
-            grade: "C",
-            phoneno: "999-999-9999",
-            age: 23
-        },
-        {
-            name: "Sophia Garcia",
-            id: 7,
-            marks: 88,
-            grade: "A",
-            phoneno: "111-222-3333",
-            age: 20
-        },
-        {
-            name: "Daniel Martinez",
-            id: 8,
-            marks: 78,
-            grade: "B",
-            phoneno: "444-555-6666",
-            age: 21
-        },
-        {
-            name: "Olivia Lee",
-            id: 9,
-            marks: 92,
-            grade: "A",
-            phoneno: "777-888-9999",
-            age: 19
-        },
-        {
-            name: "William Taylor",
-            id: 10,
-            marks: 73,
-            grade: "C+",
-            phoneno: "123-987-6543",
-            age: 22
-        }
+    // const students = [
+    //     {
+    //         name: "John Doe",
+    //         id: 1,
+    //         marks: 85,
+    //         grade: "A",
+    //         phoneno: "123-456-7890",
+    //         age: 20
+    //     },
+    //     {
+    //         name: "Jane Smith",
+    //         id: 2,
+    //         marks: 75,
+    //         grade: "B",
+    //         phoneno: "987-654-3210",
+    //         age: 21
+    //     },
+    //     {
+    //         name: "Alice Johnson",
+    //         id: 3,
+    //         marks: 90,
+    //         grade: "A",
+    //         phoneno: "555-555-5555",
+    //         age: 19
+    //     },
+    //     {
+    //         name: "Michael Brown",
+    //         id: 4,
+    //         marks: 80,
+    //         grade: "B+",
+    //         phoneno: "777-777-7777",
+    //         age: 22
+    //     },
+    //     {
+    //         name: "Emily Davis",
+    //         id: 5,
+    //         marks: 95,
+    //         grade: "A+",
+    //         phoneno: "888-888-8888",
+    //         age: 20
+    //     },
+    //     {
+    //         name: "Robert Wilson",
+    //         id: 6,
+    //         marks: 65,
+    //         grade: "C",
+    //         phoneno: "999-999-9999",
+    //         age: 23
+    //     },
+    //     {
+    //         name: "Sophia Garcia",
+    //         id: 7,
+    //         marks: 88,
+    //         grade: "A",
+    //         phoneno: "111-222-3333",
+    //         age: 20
+    //     },
+    //     {
+    //         name: "Daniel Martinez",
+    //         id: 8,
+    //         marks: 78,
+    //         grade: "B",
+    //         phoneno: "444-555-6666",
+    //         age: 21
+    //     },
+    //     {
+    //         name: "Olivia Lee",
+    //         id: 9,
+    //         marks: 92,
+    //         grade: "A",
+    //         phoneno: "777-888-9999",
+    //         age: 19
+    //     },
+    //     {
+    //         name: "William Taylor",
+    //         id: 10,
+    //         marks: 73,
+    //         grade: "C+",
+    //         phoneno: "123-987-6543",
+    //         age: 22
+    //     }
         // Add more objects as needed
-    ]
+    // ]
 
     // let students2 = []
  //1.   // let students1 = students.filter((a) => a.age > 20)  //1//
@@ -411,17 +487,21 @@
     //     }
     // ]
 
-
-
-
-
-
-
     // 1. age greater than 20 => array of name
     // 2. marks less than 90 => array of grade and name
     // 3. name starts with j => array of name and phoneno
     // const temp = Math.ceil(Math.random()*(20-10)) + 10
     // console.log(temp)
+
+
+
+
+
+
+
+
+
+
 
 
 

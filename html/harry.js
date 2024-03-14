@@ -203,6 +203,124 @@ else {
 // })
 // console.log(arr2)
 
+// Chapter -6 //
+//1. write a program using prompt function to take input of age as a value form the user and use alert to tell hm if the can drive?
+
+// let age=prompt("emter your age")
+// age=Number.parseInt(age)
+// if(age>=18){
+//     alert("you can drive")
+//     // console.log(typeof age)
+// }
+// else{
+//     alert("you can not drive")
+    
+// }
+
+//2. In Question use comfirm to ask the user if he wants to see the prompt again?
+
+// let age=prompt("enter your age")
+// if(age>=18){
+//     alert("you can drive")
+// }
+// else{
+//     alert("you can not drive")
+    
+// }
+// let message=confirm("you are want to see this prompt?")
+// console.log(message)
+// if(message){
+//     console.log("Yes I want to see this prompt")
+// }
+// else{
+//     console.log("No")
+// }
+
+//3. In the previous question use console.error to log the error if the age entered is nagative?
+// let age=prompt("emter your age")
+// age=Number.parseInt(age)
+// let num=0
+// console.error(num)
+
+// if(age>=18){
+//     alert("you can drive")
+//     // console.log(typeof age)
+// }
+// else{
+//     alert("you can not drive")   
+// }
+// Write a program to change the url to google.com (redirection) if uses a number greate than 4?
+
+
+
+
+
+
+
+
+
+
+
+
+
+//5. let color=prompt("Enter the page background color")
+// document.body.style.backgroundColor=color
+
+
+
+// Chapter -7 //
+// 1. create a navber and change the color of its first element to red?
+// let box=document.getElementById("navbar")
+// console.log(box)
+// let textElement=document.getElementById("list")
+// let text=textElement.firstElementChild
+// console.log(text)
+// text.style.color="red"
+// box.style.color="pink"
+
+// 2.create a table without tbody now use "view page source" button to check whether it has a tbody or not?
+// No
+
+// 3.create an element with 3 children now change the color of first and last element to green?
+
+// let listBox= document.getElementById("list")
+// console.log(listBox)
+// // listBox.firstElementChild.style.color="red"
+// // let first=listBox.firstElementChild.style.color="red"
+// let first=listBox.firstElementChild
+// first.style.color="red"
+// // console.log(first)
+// let last=listBox.lastElementChild
+// last.style.color="red"
+// console.log(last)
+
+// 4.write a javascript code to change background of all li tags to cyan?
+// let box=document.getElementById("list")
+// let box=document.querySelectorAll(".test")[0]
+// let box1=document.querySelectorAll(".test")[1]
+// let box2=document.querySelectorAll(".test")[2]
+// console.log(box)
+
+// box.style.backgroundColor="cyan"
+// box1.style.backgroundColor="cyan"
+// box2.style.backgroundColor="cyan"
+// box.style.color="blue"
+
+//5. which of the following used to look for the father ancestor that matches a given css selector?
+// a) matches ,b)closest ,c)contains,d)none of these
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

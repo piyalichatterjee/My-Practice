@@ -7,10 +7,18 @@
     <title>Document</title>
 </head>
 <style>
-    #text2{
-        background-color:red;
-        color:white
-    }
+  .color{
+ background-color: blueviolet;
+ color: rgb(89, 65, 65); 
+}
+  .dim{
+padding: 50px;
+border: 2px solid red;
+  }
+  /* .bg{
+    font-size: 1.5rem;
+    color: red;
+  } */
 </style>
 <body>
     <div id="box">
@@ -28,29 +36,207 @@
             ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae
             debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo pariatur
             ut consectetur incidunt repellat?</p>
-        <div id="text1">
+        <div id="text1" class="color dim ">
             <p>Lorem ipsum 4dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore,
                 molestiae debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit
                 illo pariatur ut consectetur incidunt repellat?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis exercitationem quae inventore, molestiae
                 debitis repudiandae blanditiis vero facere itaque aliquid laborum, ipsum omnis reprehenderit illo
                 pariatur ut consectetur incidunt repellat?</p>
-            <h1 class="text">hello</h1>
+            <!-- <h1 id="text5" style="background-color: yellow;" onmouseout="test()">hello</h1> -->
+            <h1 id="text5" style="background-color: yellow;">hello</h1>
             <h1 class="text">hello2</h1>
         </div>
         <h2>this is a home page</h2>
     </div>
-    <div id ="text2"style="color">
+    <div id ="text2">
         <p>hjj</p>
     </div>
 </body>
+<button id="btn">send</button>
+<!-- <img id="image1"  src="../images/apple.png" alt="error"> -->
+<form action="" id="myInput">
+    <input type="text" >
+<input type="submit">
+
+</form>
+<a href="https:www.google.com" id="anchor">Click Me</a>
 <script>
+let formElement=document.getElementById("myInput")
+formElement.addEventListener("submit",function(event){
+    event.preventDefault()
+})
 
 
 
-    let box= document.getElementById("text2")
-    let css= getComputedStyle(box)
-    console.log(css.color)
+// let link=document.getElementById("anchor")
+// link.addEventListener("click",function(event){
+//     console.log("link clicked..")
+//     event.preventDefault()
+//  })                     // eita google te gelo na//
+
+
+
+
+
+
+
+
+
+
+    // let test=document.getElementById("myInput")
+    // test.addEventListener("focus",myFocusFunction)
+    // // test.addEventListener("blur",myBlurFunction)
+    // // test.addEventListener("change",function(){
+    // //     console.log(this.value)
+    // // })
+    //  test.addEventListener("input",function(){
+    //     console.log(this.value)
+    // })
+
+    
+    // function myFocusFunction(){
+    //    test.style.backgroundColor="yellow"
+    // }
+    // // function myBlurFunction(){
+    // //     test.style.backgroundColor="red"
+
+    // // }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //     // window.addEventListener("keydown",checkkey)
+    //     window.addEventListener("keyup",checkkey)
+        
+        
+    //     function checkkey(event){
+    //         console.log(event.key)
+    // }
+
+
+// let idBox=document.querySelector("#text5")
+// console.log(idBox)
+// function test(){
+//     // alert("  clicked event")              //onclick
+    // alert(" right clicked event")         //oncontextmenu    
+    // alert(" double clicked event")              //ondblclick
+    // alert(" mousedown clicked event")              //onmousedown
+    // alert(" mouseup clicked event")              //onmouseup
+    // alert(" mouseover clicked event")              //onmouseover
+    // alert(" mouseout clicked event")              //onmouseout
+// }
+
+// idBox.addEventListener("click",function(){
+//     alert("  clicked event")              
+// })
+//  idBox.addEventListener("contextmenu",function(){
+//      alert(" right clicked event")              
+//  })
+//  idBox.addEventListener("dblclick",function(){
+//      alert(" double clicked event")              
+//  })
+// idBox.addEventListener("mousedown",function(){
+//     alert(" mousedown clicked event")              
+// })
+// idBox.addEventListener("mouseup",function(){
+//     alert(" mouseup clicked event")              
+// })
+//  idBox.addEventListener("mouseover",function(){
+//      alert(" mouseover clicked event")              
+//  })
+// idBox.addEventListener("mouseout",function(){
+//     alert(" mouseout clicked event")              
+// })
+
+
+
+
+
+
+// let img =document.getElementById("image1")
+// // window.addEventListener("DOMContentLoaded",function(){
+//     // console.log("DOM tree created")
+// // })
+// img.addEventListener("load",function(){
+//     console.log("fully loaded")
+// })
+
+// let box=document.getElementById("text5")
+// function text10(){
+//     alert("text  was a click")
+//     console.log("text  was a click")
+
+// }
+// box.addEventListener("click",text10)
+// box.addEventListener("mouseout",function(){
+//     alert("mouse over is activated")
+// })
+
+
+// let button=document.getElementById("btn")
+// function click1(){
+//     console.log("click1 activated")
+// }
+// function click2(){
+//     console.log("click2 activated")
+// }
+// button.addEventListener("click",click1)
+// button.addEventListener("click",click2)
+// button.addEventListener("click",click2)
+// button.removeEventListener("click",click1)
+
+
+// function buttonClick(){
+//     alert("button was a click")
+// }
+
+// button.addEventListener("click",buttonClick)
+// button.addEventListener("mousemove",function(){
+//     alert("mouse over is activated")
+// })
+
+
+
+
+
+
+
+
+
+const text = document.querySelector("#text2").firstElementChild
+const text1 = document.querySelector("#text1")
+
+text.setAttribute("class","bg")
+// text.classList.add("bg")
+console.log(window.getComputedStyle(text1).getPropertyValue("color"))
+// text.classList.replace("bg","name")
+// text.classList.remove("bg")
+// let result=text.classList.contains("bg")
+// console.log(result)
+// text.classList.toggle("bg")
+// console.log(text.classList)
+// text.className +=" dim"      //class added//
+// console.log(text.classList)
+// for(let i of text.classList){
+//     console.log(i)
+// }
+
+// console.log(text.className)   
+
+
+
+
+
+    // let box= document.getElementById("text2")
+    // let css= getComputedStyle(box)
+    // console.log(css.color)
 
 
 
