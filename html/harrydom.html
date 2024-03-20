@@ -2,16 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .yellow {
+      background-color: yellow;
+      color: black;
+    }
+
+    .red {
+
+      background-color: red;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- <div class="container">
+  <!-- <div class="container">
         <table class="table table-primary">
             <thead>
               <tr>
@@ -43,92 +53,66 @@
           </table>
     </div> -->
 
-    <div id="box1"class="text">
+  <!-- <div id="box1"class="text">
       This is an element id 1 <span id="sp1">piyali</span>
     </div>
     <div id="box2"class="text">
       This is an element id 2
-    </div>
+    </div> -->
+
+
+
+  <!-- <span id="first"><b>hi</b>hey i am span</span>
+ -->
+  <!-- <div id="first" class="box" data-game="">
+  This is my home page
+</div> -->
+  <!-- <div id="first" class="yellow red">
+    <h1>This is my home page</h1>
+  </div> -->
+  <!-- <div class="container">
+  <button onclick="alert('hello');let a=5; let b=6;console.log(a+b)">Click me</button>
+</div> -->
+
+  <div>
+    <button id="btn">Click me</button>
+  </div>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
 
 <script>
-
-let box=document.getElementById("box1")
-let sp1=document.getElementById("sp1")
-console.log(box)
-console.log(box.matches(".text"))
-console.log(sp1.closest(".text"))
-console.log(sp1.closest("#sp1"))
-console.log(box1.contains(sp1))
-console.log(sp1.contains(box1))
+  let button = document.getElementById("btn")
+  // console.log(button)
+  // button.addEventListener("click",function(){
+  //   alert("hello Piyali")
+  //   console.log("yes")
+  // })
+  // button.addEventListener("click",clickName)
 
 
+  // function clickName(){
+  //   alert("hello piyali 2")
+  //   console.log("hi")
+  // }
 
+  // let a=function(e){
+  //   console.log(e.target)
+  //   console.log(e.type,event.clientX,event.clientY)
+  //   // alert("hi")
+  // }
+  // let b=function(e){
+  //   alert("hi 2")
+  // }
+  // button.addEventListener("click",a)
+  // button.addEventListener("click",b)
+  // let x=prompt("what is your faverite number")
+  // if(x=="5"){
+  //   button.removeEventListener("click",a)
 
-
-// let tableElement=document.body.firstElementChild.firstElementChild
-// console.log(tableElement)
-// console.log(tableElement.rows)
-// console.log(tableElement.tHead.firstElementChild)
-// console.log(tableElement.tBodies)
-
-// console.log(tableElement.rows[2].cells)
-// console.log(tableElement.rows[3].rowIndex)
-// console.log(tableElement.cells)
-// console.log(tableElement.rows[2])
-
-
-
-
-    // let b = document.body
-    // console.log("first child of b is", b.firstChild)
-    // console.log("first child of b is", b.firstElementChild)
-
-
-
-    // console.log(document.body.firstChild)
-    // console.log(document.body.lastChild)
-    // console.log(document.body.childNodes)
-
-
-
-    // alert("Enter the number")
-    // let a=prompt("Enter a here")
-    // alert("You entered a of type"+ (typeof a))
-    // let write=confirm("do you want to write to the page")
-    // if(write){
-
-    //     document.write(a)
-    // }
-    // else{
-    //     document.write("Please allow me too")
-    // }
-
-
-    //  alert("this is a home page")
-    //  console.log("this is a home page")
-    // let a=prompt("Enter the number")
-    // // let b=prompt("Enter the number")
-    // //  a=Number.parseInt(a)
-    //  console.log(a)
-
-    // // alert("you entered a of type"  + (typeof  a))
-
-    // console.log(typeof a)
-
-    // if( typeof a ==="number"){
-    //     alert("you entered a of number")
-
-
-    // }
-    // else if(typeof a==="string")
-    // else{
-    //     alert("you entered a1 of type"  + (typeof a ))
-
-    // }
+  // }
 
 
 
@@ -138,25 +122,259 @@ console.log(sp1.contains(box1))
 
 
 
+  //  settimeout & settimeintervel //
+  // document.write("hello")
+  // setTimeout(function () {
+  //   alert("I am inside of settimeout")
+  // }, 2000)
+  // let b = prompt("Do you want to run the settimout?")
+  // let a = setTimeout(function () {
+  //   alert("I am inside of settimeout")
+  // }, 5000)
+  // if (b === "n") {
+  //   console.log("hi")
+  //   clearTimeout(a)
+  // }
+  // console.log(a)
 
-    1.  // console.log("log")
-    // console.info("info")
-    // console.warn("warn")
-    // console.error("err")
-    // console.assert("err" != false)
-    // console.log("err" == true)
-    // console.time("forLoop")
-    //   for(let i=0;i<50;i++){
-    //  console.log(50)
-    //   }
-    //   console.timeEnd("forLoop")
-    // console.time("whileLoop")
-    // let i = 0
-    // while (i < 50) {
-    //     console.log(50)
-    //     i++
-    // }
-    // console.timeEnd("whileLoop")
+
+  // let sum = (a, b, c, d) => {
+
+  //   console.log("yes I am running " +(a + b + c + d))
+  // //  a + b + c + d
+  //  return a + b + c + d
+  // }
+
+  // // setTimeout(sum, 2000, 2, 5, 6, 4)
+  // sum ( 2, 5, 6, 4)
+
+  // setInterval(function(){
+  //   alert("setinterval")
+  // },5000)
+
+  //   let sum = (a, b, c, d) => {
+
+  //     console.log("yes I am running " +(a + b + c + d))
+  //   //  a + b + c + d
+  //    return a + b + c + d
+  //   }
+
+  // let stop= setInterval(sum, 2000, 2, 5, 6, 4)
+  //   clearInterval(stop)
+  //   // sum ( 2, 5, 6, 4)
+
+
+
+
+
+
+
+  // let box=document.getElementById("first")
+  // console.log(typeof box)
+  // let div=document.createElement("div")
+  // div.innerHTML="<h1>hello world</h1>"
+  // console.log(div)
+  // box.appendChild(div)
+  // box.replaceWith(div)
+
+  //  box.innerHTML=box.innerHTML + "<h1>this a paragraph</h1>"
+  // let h1Text="<h1>hello</h1>"
+  // box.insertAdjacentHTML("beforebegin",h1Text)
+  // box.insertAdjacentHTML("afterbegin",h1Text)
+  // box.insertAdjacentHTML("beforend",h1Text)
+  // box.insertAdjacentHTML("afterend",h1Text)
+  // console.log(box)
+
+  // box.append(h1Text)   //beforend
+  // box.prepend(h1Text)     //afterbegin
+  // box.before(h1Text)         //beforbegin
+  // box.after(h1Text)            //afterend
+
+
+
+  // box.insertAdjacentElement("afterbegin",div)
+  // box.insertAdjacentText("afterbegin","hello")
+
+
+
+
+
+  // let box=document.getElementById("first")
+  // let a1 =box.className
+  // let a=box.classList.add("red")
+  // let a1=box.classList.remove("red")
+  // let a3=box.classList.contains("red")
+  // let a4=box.classList.toggle("red")
+  // console.log(a4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // let idElement=document.getElementById("first")
+  // let a=idElement.getAttribute("class")
+  // console.log(a)
+
+  // let box=document.getElementsByClassName("box")[0]
+  // let test=box.getAttribute("id")
+  //  console.log(test)
+
+
+  // let className=document.getElementsByClassName("box")[0]
+  // console.log(className)
+  // let value=className.getAttribute("id")
+  // console.log(value)
+
+
+  // let idElement=document.getElementById("first")
+  // let text=idElement.setAttribute("bg","tab")
+  // let text1=idElement.getAttribute("bg")
+  // console.log(text1)
+  // let remove=idElement.removeAttribute("class")
+  // // let value=idElement.hasAttribute("text")
+  // let value=idElement.hasAttribute("class")
+  // console.log(value)
+  // console.log(idElement.attributes)
+
+
+
+
+  // let s=document.getElementsByTagName("span")[0]
+  // // console.log(s)
+  // let s1=document.getElementsByTagName("span")[0]
+  // // console.dir(s)     //object //
+
+  // let a=document.body.firstChild.nodeName
+  // console.log(a)
+  // let a1=document.body.firstElementChild.nodeName
+  // console.log(a1)
+
+  // let word=document.getElementById("first")
+  // console.log(word.innerHTML)
+  // console.log(word.innerHTML="<h1>hello</h1>")
+  // console.log(word.outerHTML)
+  // console.log(word.outerHTML="<div>hello</div>")
+  // console.log(document.body.textContent)
+
+
+
+  // let box=document.getElementById("box1")
+  // let sp1=document.getElementById("sp1")
+  // console.log(box)
+  // console.log(box.matches(".text"))
+  // console.log(sp1.closest(".text"))
+  // console.log(sp1.closest("#sp1"))
+  // console.log(box1.contains(sp1))
+  // console.log(sp1.contains(box1))
+
+
+
+  // let tableElement=document.body.firstElementChild.firstElementChild
+  // console.log(tableElement)
+  // console.log(tableElement.rows)
+  // console.log(tableElement.tHead.firstElementChild)
+  // console.log(tableElement.tBodies)
+
+  // console.log(tableElement.rows[2].cells)
+  // console.log(tableElement.rows[3].rowIndex)
+  // console.log(tableElement.cells)
+  // console.log(tableElement.rows[2])
+
+
+
+
+  // let b = document.body
+  // console.log("first child of b is", b.firstChild)
+  // console.log("first child of b is", b.firstElementChild)
+
+
+
+  // console.log(document.body.firstChild)
+  // console.log(document.body.lastChild)
+  // console.log(document.body.childNodes)
+
+
+
+  // alert("Enter the number")
+  // let a=prompt("Enter a here")
+  // alert("You entered a of type"+ (typeof a))
+  // let write=confirm("do you want to write to the page")
+  // if(write){
+
+  //     document.write(a)
+  // }
+  // else{
+  //     document.write("Please allow me too")
+  // }
+
+
+  //  alert("this is a home page")
+  //  console.log("this is a home page")
+  // let a=prompt("Enter the number")
+  // // let b=prompt("Enter the number")
+  // //  a=Number.parseInt(a)
+  //  console.log(a)
+
+  // // alert("you entered a of type"  + (typeof  a))
+
+  // console.log(typeof a)
+
+  // if( typeof a ==="number"){
+  //     alert("you entered a of number")
+
+
+  // }
+  // else if(typeof a==="string")
+  // else{
+  //     alert("you entered a1 of type"  + (typeof a ))
+
+  // }
+
+
+
+
+
+
+
+
+
+
+  1.  // console.log("log")
+  // console.info("info")
+  // console.warn("warn")
+  // console.error("err")
+  // console.assert("err" != false)
+  // console.log("err" == true)
+  // console.time("forLoop")
+  //   for(let i=0;i<50;i++){
+  //  console.log(50)
+  //   }
+  //   console.timeEnd("forLoop")
+  // console.time("whileLoop")
+  // let i = 0
+  // while (i < 50) {
+  //     console.log(50)
+  //     i++
+  // }
+  // console.timeEnd("whileLoop")
 </script>
 
 </html>

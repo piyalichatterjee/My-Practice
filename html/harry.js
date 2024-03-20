@@ -286,7 +286,6 @@ else {
 // let listBox= document.getElementById("list")
 // console.log(listBox)
 // // listBox.firstElementChild.style.color="red"
-// // let first=listBox.firstElementChild.style.color="red"
 // let first=listBox.firstElementChild
 // first.style.color="red"
 // // console.log(first)
@@ -296,10 +295,12 @@ else {
 
 // 4.write a javascript code to change background of all li tags to cyan?
 // let box=document.getElementById("list")
-// let box=document.querySelectorAll(".test")[0]
+// let box=document.querySelectorAll(".test")
 // let box1=document.querySelectorAll(".test")[1]
 // let box2=document.querySelectorAll(".test")[2]
-// console.log(box)
+
+// console.log(box.length)
+
 
 // box.style.backgroundColor="cyan"
 // box1.style.backgroundColor="cyan"
@@ -308,6 +309,52 @@ else {
 
 //5. which of the following used to look for the father ancestor that matches a given css selector?
 // a) matches ,b)closest ,c)contains,d)none of these
+
+// Chapter -8 //
+// 1.Write a program to show different alerts when different buttons are clicked?
+
+// let button=document.querySelectorAll(".btn")[0]
+// let button1=document.querySelectorAll(".btn")[1]
+// console.log(button)
+// console.log(button1)
+
+// button.addEventListener("click",function(){
+//     alert("This is first button")
+// })
+// button1.addEventListener("click",function(){
+//     alert("This is second button")
+// })
+// 2.create a wedsite which is cepable of storing bookmark of your favorite website using href?
+// 3.Repeat Q2 using addEventListener?
+
+// let google=document.getElementById("google")
+// let zomato=document.getElementById("zomato")
+// let twitter=document.getElementById("twitter")
+
+// google.addEventListener("click",function(){
+//     window.Location="https://www.google.com/";
+//     window.focus()
+// })
+// zomato.addEventListener("click",function(){
+    
+// })
+// twitter.addEventListener("click",function(){
+    
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
